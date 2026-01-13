@@ -85,9 +85,9 @@ footer {
 }
 
   .profile-img {
-    width: 300px;
+    width: 70%;
     height: auto;
-    border-radius: 50%; /* makes it round */
+    border-radius: 70%; /* makes it round */
   }
 
 
