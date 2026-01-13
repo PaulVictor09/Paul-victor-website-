@@ -84,4 +84,10 @@ footer {
     transform: translateY(0);
 }
 
+  .profile-img {
+    width: 300px;
+    height: auto;
+    border-radius: 50%; /* makes it round */
+  }
+
 
