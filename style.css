@@ -1,0 +1,87 @@
+:root {
+    --bg-color: #ffffff;
+    --text-color: #222;
+    --header-bg: #1f2937;
+    --card-bg: #f4f4f4;
+}
+
+body.dark {
+    --bg-color: #111827;
+    --text-color: #e5e7eb;
+    --header-bg: #020617;
+    --card-bg: #1f2937;
+}
+
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    margin: 0;
+    background: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    transition: background 0.4s, color 0.4s;
+}
+
+header {
+    background: var(--header-bg);
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    margin: 0 12px;
+    text-decoration: none;
+}
+
+.container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
+    animation: fadeIn 1s ease-in;
+}
+
+.card {
+    background: var(--card-bg);
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.toggle-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: #2563eb;
+    color: white;
+    border: none;
+    padding: 8px 14px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background: var(--card-bg);
+    margin-top: 40px;
+    font-size: 14px;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.reveal {
+    opacity: 0;
+    transform: translateY(25px);
+    transition: all 0.8s ease;
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
