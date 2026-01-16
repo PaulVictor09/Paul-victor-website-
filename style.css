@@ -28,6 +28,11 @@ header {
     text-align: center;
 }
 
+div {
+    text-align:center;
+
+}
+
 nav a {
     color: white;
     margin: 0 12px;
